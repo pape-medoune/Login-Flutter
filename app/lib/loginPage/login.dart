@@ -10,7 +10,6 @@ class Login extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.only(left: 20.0, right: 20.0),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
                 "assets/images/5907.png",
@@ -48,6 +47,27 @@ class Login extends StatelessWidget {
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(23),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 25,
+              ),
+              TextButton(
+                onPressed: () {},
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.blue,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 100,
+                    vertical: 20,
+                  ),
+                ),
+                child: const Text(
+                  "Se Connecter",
+                  style: TextStyle(
+                    fontSize: 21,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
                   ),
                 ),
               ),
