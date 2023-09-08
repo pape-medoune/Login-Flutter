@@ -53,13 +53,16 @@ class Login extends StatelessWidget {
               const SizedBox(
                 height: 25,
               ),
-              TextButton(
+              ElevatedButton(
                 onPressed: () {},
-                style: TextButton.styleFrom(
+                style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blue,
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 100,
+                    horizontal: 120,
                     vertical: 20,
+                  ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20.0),
                   ),
                 ),
                 child: const Text(
